@@ -31,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100vh;
+  width: 100vw;
   background-color: var(--cor1);
   color: white;
 }
@@ -48,15 +48,14 @@ header > h1 {
   font-family: var(--fonte-titulos);
   margin: 10px;
   text-align: center;
+  letter-spacing: 3px;
   color: var(--cor1);
-  font-size: 7.0vw;
 }
 
 header > p {
   text-align: center;
   font-family: var(--fonte-padrao);
-  margin: 5px;
-  font-size: 3.5vw;
+  margin: 5px 10px;
 }
 
 /* [MENU] */
@@ -66,7 +65,7 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: var(--cor2);
-  margin: 20px;
+  margin: 10px;
   height: 30%;
   width: 90%;
   border-radius: 30px;
@@ -78,21 +77,21 @@ nav > a {
   margin: 1%;
   text-align: center;
   padding: 5px;
-  font-size: 3.5vw;
 }
 
 /* [CONTEUDO] */
 main {
-  width: 50vh;
+  width: 90vw;
   background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
   border-radius: 0px 0px 15px 15px;
+  margin: 15px 0px;
 }
 
 /* [RESPONSIVIDADE DO ARTIGO] */
-main > article{
-  min-width: 350px;
-  max-width: 800px;
+main > article {
+  max-width: 1000px;
   margin: auto;
+  padding: 10px;
 }
 
 /* [TITULO H2 E PARAGRAFOS] */
@@ -106,7 +105,6 @@ main h2#titulo {
 main h2 {
   background-image: linear-gradient(to right, var(--cor3), transparent);
   font-family: var(--fonte-android);
-  font-size: 6.2vw;
   margin: 10px;
   padding: 5px;
 }
@@ -114,7 +112,6 @@ main h2 {
 article > p {
   text-align: justify;
   margin: 10px;
-  font-size: 4.0vw;
 }
 
 /* [NAGAVEGAÇÃO EM LINKS] */
@@ -133,14 +130,12 @@ main > article a:hover {
 
 /* [DESCRIÇÃO DE IRINA BLOK] */
 article#irina {
-  max-width: 100%;
+  width: 100%;
   background-color: var(--cor1);
   color: var(--cor2);
-  font-size: 4.0vw
 }
 
 article#irina > div {
-  min-width: 350px;
   max-width: 800px;
   margin: auto;
 }
@@ -157,8 +152,7 @@ main img {
 }
 
 main img#bugdroid {
-  max-width: 50%;
-  min-width: 40%;
+  width: 50%;
 }
 
 /* [VÍDEO RESPONSIVO] */
@@ -186,14 +180,12 @@ aside {
 }
 
 aside > h3 {
+  font-family: var(--fonte-android);
   margin: 10px;
-  font-size: 5.0vw;
-  
 }
 
 aside > p {
   text-align: justify;
-  font-size: 3.5vw;
 }
 
 aside > ul {
@@ -201,7 +193,6 @@ aside > ul {
   list-style-position: inside;
   columns: 2;
   margin: 20px;
-  font-size: 4.0vw;
 }
 
 /* [RODAPÉ] */
@@ -217,5 +208,94 @@ footer {
   margin-bottom: 0px;
   font-size: 3.0vw;
   text-align: center;
+}
+
+/*[RESPOSIVIDADE DAS LETRAS]*/
+@media screen and (min-width: 701px) {
+
+  header > h1 {
+    font-size: 5.0em;
+  }
+
+  header > p {
+    font-size: 2.5em;
+  }
+
+  nav > a {
+    font-size: 2.5em;
+  }
+
+  main h2 {
+    font-size: 4em;
+  }
+
+  article > p {
+    font-size: 2.5em;
+  }
+
+  article#irina > div > h2 {
+    font-size: 4em;
+  }
+
+  article#irina p {
+    font-size: 2.5em;
+  }
+
+  aside > h3 {
+    font-size: 4em;
+  }
+
+  aside > p {
+    font-size: 2.5em;
+  }
+
+  aside > ul {
+    font-size: 2.7em;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  header > h1 {
+    font-size: 2.0em;
+  }
+
+  header > p {
+    font-size: 1.0em;
+  }
+
+  nav > a {
+    font-size: 1.0em;
+  }
+
+  main h2 {
+    font-size: 1.5em;
+  }
+
+  article > p {
+    font-size: 1.0em;
+  }
+
+  article#irina > div > h2 {
+    font-size: 1.5em;
+  }
+
+  article#irina > p {
+    font-size: 1em;
+  }
+
+  aside > h3 {
+    font-size: 1.5em;
+  }
+
+  aside > p {
+    font-size: 1.0em;
+  }
+
+  aside > ul {
+    font-size: 1.1em;
+  }
+
 }
 /*[/ESTILO]*/
